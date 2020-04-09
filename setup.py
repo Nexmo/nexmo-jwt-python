@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="nexmo-jwt-nexmo",
+    name="nexmo-jwt",
     version="1.0.0",
     author="Diana Rodriguez",
     author_email="diana.rodriguezmanrique@vonage.com",
@@ -19,4 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires=">=3.4",
+    install_requires=["pyjwt>=1.0.1"],
 )

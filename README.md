@@ -11,7 +11,7 @@ Learn more about [Authenticating with JSON Web Tokens](https://developer.nexmo.c
 To install, run:
 
 ```python
-pip install nexmo-jwt-python
+pip install nexmo-jwt
 ```
 
 ### Usage
@@ -30,7 +30,7 @@ To generate token the **application_id** claim and the **private_key** are requi
 To generate a JWT with these properties you can use:
 
 ```python
-from nexmojwt import JWTokenGenerator
+from nexmo-jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','private key contents')
 token: bytes = gen.generate_token()
 ```
@@ -40,7 +40,7 @@ token: bytes = gen.generate_token()
 You can also provide a Path to the location of your private key:
 
 ```python
-from nexmojwt import JWTokenGenerator
+from nexmo-jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','/path/to/your/private.key')
 token: bytes = gen.generate_token()
 ```
@@ -50,7 +50,7 @@ token: bytes = gen.generate_token()
 It is also possible to generate a JWT with custom data:
 
 ```python
-from nexmojwt import JWTokenGenerator
+from nexmo-jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','/path/to/your/private.key')
 token: bytes = gen.generate_token(payload={"foo", "bar"})
 ```

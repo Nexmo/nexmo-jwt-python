@@ -41,7 +41,7 @@ token: bytes = gen.generate_token()
 You can also provide a Path to the location of your private key:
 
 ```python
-from nexmo-jwt import JWTokenGenerator
+from nexmo_jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','/path/to/your/private.key')
 token: bytes = gen.generate_token()
 ```
@@ -51,7 +51,7 @@ token: bytes = gen.generate_token()
 It is also possible to generate a JWT with custom data:
 
 ```python
-from nexmo-jwt import JWTokenGenerator
+from nexmo_jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','/path/to/your/private.key')
 token: bytes = gen.generate_token(payload={"foo", "bar"})
 ```

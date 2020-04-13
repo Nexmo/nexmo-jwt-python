@@ -1,10 +1,9 @@
 # Nexmo Python JWT Generator
 
 [![PyPI version](https://badge.fury.io/py/nexmo-jwt.svg)](https://badge.fury.io/py/nexmo-jwt) [![Python versions supported](https://img.shields.io/pypi/pyversions/nexmo-jwt.svg)](https://pypi.python.org/pypi/nexmo-jwt) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black) [![Downloads](https://pepy.tech/badge/nexmo-jwt)](https://pepy.tech/project/nexmo-jwt)
-
 <img src="https://developer.nexmo.com/assets/images/Vonage_Nexmo.svg" height="48px" alt="Nexmo is now known as Vonage" />
 
-Python library to assist with generating JWT tokens for use with the Nexmo API.
+Python class to assist with generating JWT tokens for use with the Nexmo API.
 
 Learn more about [Authenticating with JSON Web Tokens](https://developer.nexmo.com/concepts/guides/authentication#json-web-tokens-jwt).
 
@@ -32,7 +31,7 @@ To generate token the **application_id** claim and the **private_key** are requi
 To generate a JWT with these properties you can use:
 
 ```python
-from nexmo-jwt import JWTokenGenerator
+from nexmo_jwt import JWTokenGenerator
 gen: JWTokenGenerator = JWTokenGenerator('your-application-id','private key contents')
 token: bytes = gen.generate_token()
 ```

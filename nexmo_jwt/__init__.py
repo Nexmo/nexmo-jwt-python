@@ -21,7 +21,7 @@ class JWTokGenException(Exception):
 
 class JWTokenGenerator:
     """
-    Generate a JSON Web Token
+    Generate a Json Web Token
     """
 
     application_id: str
@@ -31,7 +31,7 @@ class JWTokenGenerator:
     def __init__(self, application_id: str, private_key: str, expiration=None):
         """
         application_id is a mandatory field.
-        expiration by default is 15 minutes (after iat) if not provided. If provided you can pass that as timestamp or datetime
+        expiration by default is 15 minutos (after iat) if not provided. If provided you can pass that as timestamp or datetime
         private_key is mandatory and should be provided as string or as path to private key
         """
         self.application_id = application_id

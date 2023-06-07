@@ -1,8 +1,6 @@
 # ⚠️ This repository is no longer maintained.
 ## This repo is deprecated. JWTs can be generated for Vonage applications using the generator at [Vonage/vonage-python-jwt](https://github.com/Vonage/vonage-python-jwt).
 
----
-
 
 # Nexmo Python JWT Generator
 
